@@ -1,13 +1,422 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1366, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+<html>
+ <head>
+  <title> EBR Mangment System</title>
+  <meta charset="utf-8">
+  <!-- INTERNET EXPLORER  meta-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--mobile meta-->
+  <meta  name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href ="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" >
+  <link rel="stylesheet" href ="css/EBRcss.css"/>
+   
+  <script src ="js/html5shiv.min.js"></script>
+  <script src ="js/respond.min.js"></script>
+ </head>
+ <body>
+      <!-- start header-->
+	  
+    <!--start our navbar-->
+	
+	 
+	
+	<div class="header">
+
+	 <nav class="navbar navbar-inverse navbar-fixed-top">
+			
+		  <div class="container">
+		  
+			<div class="navbar-header">
+			  
+			  <span class="navbar-EBR" > ERB Mangment System</span>
+			  
+		    </div>
+
+			<div class="collapse navbar-collapse" >
+			
+			  <ul class="nav navbar-nav navbar-right">
+				 
+				<li> <a href="#">  Home  </a>  </li>
+				
+				<li class="dropdown">
+				 <a class="dropdown-toggle"  data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false" > categories <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a class="to_clients">Clients</a></li>
+					<li><a class="to_suppliers">Suppliers</a></li>
+					<li><a class="to_expenses">Expensis</a></li>
+					<li><a class="to_bills">Sell-Bills</a></li>
+					<li><a class="to_items">Items</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>  
+			
+		  </div>
+		  <!-- end container -->
+		  
+		</nav>
+	</div>
+ 
+    <!--end our navbar-->
+	<!--end header-->
+
+	<!--clients table-->
+	 <section class="quick-info-items" id="clients">
+        <div class="container">
+        	<i class="fa fa-1x fa-plus add_item" title="add new client"></i>
+            <h1> Clients Data </h1>
+            <div class="content-quick-info-items">
+                <div class="thead">
+                    <ul class="list-unstyled">
+                        <li class="name-item">
+                            <label> Name  </label>
+                            <i class="fa fa-user fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Phone Number  </label>
+                            <i class="fa fa-mobile fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Address </label>
+                            <i class="fa fa-address-card fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Options </label>
+                            <i class="fa fa-cogs"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start section table -->
+                <table class="table">
+                    <tbody>
+            			<tr>
+                            <input hidden class="id" value="5ab90a632590022a5030b609">
+            				<td class="name">any thing</td>
+            				<td class="phone_number">0123456789</td>
+            				<td class="address">nothing</td>
+            				<td>
+            					<i class="fa fa-edit edit_item" title="edit this client"></i>
+                                <i class="fa fa-trash delete_item" title="delete this client"></i>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+                <!-- end section table -->
+            </div>
+        </div>
+    </section>
+
+    <!--clients table-->
+	 <section class="quick-info-items" id="suppliers">
+        <div class="container">
+        	<i class="fa fa-1x fa-plus add_item" title="add new supplier"></i>
+            <h1> Suppliers Data </h1>
+            <div class="content-quick-info-items">
+                <div class="thead">
+                    <ul class="list-unstyled">
+                        <li class="name-item">
+                            <label> Name  </label>
+                            <i class="fa fa-user fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Phone Number  </label>
+                            <i class="fa fa-mobile fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Address </label>
+                            <i class="fa fa-address-card fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Options </label>
+                            <i class="fa fa-cogs"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start section table -->
+                <table class="table">
+                    <tbody>
+            			<tr>
+                            <input hidden class="id" value="">
+            				<td class="name">any thing</td>
+            				<td class="phone_number">0123456789</td>
+            				<td class="address">nothing</td>
+            				<td>
+            					<i class="fa fa-edit edit_item" title="edit this supplier"></i>
+                                <i class="fa fa-trash delete_item" title="delete this supplier"></i>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+                <!-- end section table -->
+            </div>
+        </div>
+    </section>
+	 
+	<!--clients table-->
+	 <section class="quick-info-items" id="expenses">
+        <div class="container">
+        	<i class="fa fa-1x fa-plus add_item" title="add new expense"></i>
+            <h1> Expenses Data </h1>
+            <div class="content-quick-info-items">
+                <div class="thead">
+                    <ul class="list-unstyled">
+                        <li class="name-item">
+                            <label> Date  </label>
+                            <i class="fa fa-calendar fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Description  </label>
+                            <i class="fa fa-file-text fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Salary </label>
+                            <i class="fa fa-money fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Options </label>
+                            <i class="fa fa-cogs"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start section table -->
+                <table class="table">
+                    <tbody>
+            			<tr>
+                            <input hidden class="id" value="">
+            				<td class="day_date">any thing</td>
+            				<td class="description">0123456789</td>
+            				<td class="salary">nothing</td>
+            				<td>
+            					<i class="fa fa-edit edit_item" title="edit this expense"></i>
+                                <i class="fa fa-trash delete_item" title="delete this expense"></i>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+                <!-- end section table -->
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-info-items" id="bills">
+        <div class="container">
+        	<i class="fa fa-1x fa-plus add_item" title="add new bill"></i>
+            <h1> Bills Data </h1>
+            <div class="content-quick-info-items">
+                <div class="thead">
+                    <ul class="list-unstyled">
+                        <li class="name-item">
+                            <label> Name  </label>
+                            <i class="fa fa-user fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Date  </label>
+                            <i class="fa fa-calendar fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Total </label>
+                            <i class="fa fa-money fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Paid </label>
+                            <i class="fa fa-money fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Options </label>
+                            <i class="fa fa-cogs"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start section table -->
+                <table class="table">
+                    <tbody>
+            			<tr>
+                            <input hidden class="id" value="">
+            				<td class="name">any thing</td>
+            				<td class="day_date">0123456789</td>
+            				<td class="total">nothing</td>
+            				<td class="paid">nothing</td>
+            				<td>
+            					<i class="fa fa-edit edit_item" title="edit this bill"></i>
+                                <i class="fa fa-trash delete_item" title="delete this bill"></i>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+                <!-- end section table -->
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-info-items" id="items">
+        <div class="container">
+        	<i class="fa fa-1x fa-plus add_item" title="add new item"></i>
+            <h1> Items Data </h1>
+            <div class="content-quick-info-items">
+                <div class="thead">
+                    <ul class="list-unstyled">
+                        <li class="name-item">
+                            <label> Type  </label>
+                            <i class="fa fa-id-card fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Amount  </label>
+                            <i class="fa fa-bars fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Buy Price </label>
+                            <i class="fa fa-money fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Sell Price </label>
+                            <i class="fa fa-money fa-2x"></i>
+                        </li>
+                        <li class="name-item">
+                            <label> Options </label>
+                            <i class="fa fa-cogs"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start section table -->
+                <table class="table">
+                    <tbody>
+            			<tr>
+                            <input hidden class="id" value="">
+            				<td class="type">any thing</td>
+            				<td class="amount">0123456789</td>
+            				<td class="buy_price">nothing</td>
+            				<td class="sell_price">nothing</td>
+            				<td>
+            					<i class="fa fa-edit edit_item" title="edit this item"></i>
+                                <i class="fa fa-trash delete_item" title="delete this item"></i>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+                <!-- end section table -->
+            </div>
+        </div>
+    </section>
+
+    <section class="form text-center clients_form">
+        <form method="post">
+            <h2>Edit Client</h2>
+            <div>   
+                <label> Client Name </label>
+                <input type="text" class="name" required>
+            </div>
+            <div>
+                <label> Phone Number </label>
+                <input type="text" class="phone_number" required>
+            </div>
+            <div>
+                <label> Address </label>
+                <input type="text" class="address" required>
+            </div>           
+            <input type="submit" name="" value="SAVE" class="btn btn-primary btn-lg">  
+            <input type="Number" value="" class="id" hidden>
+        </form>   
+    </section>
+
+    <section class="form text-center suppliers_form">
+        <form method="post">
+            <h2></h2>
+            <div>   
+                <label> Supplier Name </label>
+                <input type="text" class="name" required>
+            </div>
+            <div>
+                <label> Phone Number </label>
+                <input type="text" class="phone_number" required>
+            </div>      
+             <div>
+                <label> Address </label>
+                <input type="text" class="address" required>
+            </div>           
+            <input type="submit" name="" value="SAVE" class="btn btn-primary btn-lg"> 
+            <input type="Number" value="" class="id" hidden> 
+        </form>   
+    </section>
+
+    <section class="form text-center expenses_form">
+        <form method="post">
+            <h2></h2>
+            <div>   
+                <label> Expense Date </label>
+                <input type="text" class="day_date" required>
+            </div>
+            <div>
+                <label> Description </label>
+                <input type="text" class="description" required>
+            </div>
+             <div>
+                <label> Salary </label>
+                <input type="text" class="salary" required>
+            </div>           
+            <input type="submit" name="" value="SAVE" class="btn btn-primary btn-lg"> 
+            <input type="Number" value="" class="id" hidden> 
+        </form>   
+    </section>
+
+    <section class="form text-center bills_form">
+        <form method="post">
+            <h2></h2>
+            <div>   
+                <label> Name </label>
+                <input type="text" class="name" required>
+            </div>
+            <div>
+                <label> Date </label>
+                <input type="text" class="day_date" required>
+            </div>
+            <div>
+                <label> Total </label>
+                <input type="text" class="total" required>
+            </div>
+            <div>
+                <label> Paid </label>
+                <input type="text" class="paid" required>
+            </div>           
+            <input type="submit" name="" value="SAVE" class="btn btn-primary btn-lg">
+            <input type="Number" value="" class="id" hidden>  
+        </form>   
+    </section>
+
+    <section class="form text-center items_form">
+        <form method="post">
+            <h2></h2>
+            <div>   
+                <label> Type </label>
+                <input type="text" class="type" required>
+            </div>
+            <div>
+                <label> Amount </label>
+                <input type="text" class="amount" required>
+            </div>
+            <div>
+                <label> Buy Price </label>
+                <input type="text" class="buy_price" required>
+            </div>
+            <div>
+                <label> Sell Price </label>
+                <input type="text" class="sell_price" required>
+            </div>           
+            <input type="submit" name="" value="SAVE" class="btn btn-primary btn-lg">
+            <input type="Number" value="" class="id" hidden>  
+        </form>   
+    </section>
+
+    
+
+
+  <script src ="js/jquery-3.1.1.min.js"> </script>
+  <script src ="js/bootstrap.min.js"> </script>
+  <script src ="js/home.js"> </script> 
+ </body>
+
+
+
 </html>

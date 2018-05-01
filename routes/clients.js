@@ -1,46 +1,45 @@
 const express = require('express');
-const router = express.Router();
 
+const router = express.Router();
 const Client = require('../models/client');
 
 
-// get a list of all clents
-router.get('/', function(req, res, next){
-    Client.find({}).then(function(allClients){
-        res.status(200).send(allClients);
-    }).catch(next);
+// get a list of all clients
+router.get('/', (req, res, next) => {
+  Client.find({}).then((allClients) => {
+    res.status(200).send(allClients);
+  }).catch(next);
 });
 
 // get a client by id
-router.get('/:id', function(req, res, next){
-    Client.findById({_id: req.params.id}).then(function(foundClient){
-        res.status(200).send(foundClient);
-    });
+router.get('/:id', (req, res, next) => {
+  Client.findById({ _id: req.params.id }).then((foundClient) => {
+    res.status(200).send(foundClient);
+  }).catch(next);
 });
 
 // add a new client to the database
-router.post('/', function(req, res, next){
-    Client.create(req.body).then(function(savedClient){
-        res.status(200).send(savedClient);
-    }).catch(next);
+router.post('/', (req, res, next) => {
+  Client.create(req.body).then((savedClient) => {
+    res.status(200).send(savedClient);
+  }).catch(next);
 });
 
 // update existing client in the database
-router.put('/:id', function(req, res, next){
-    Client.findByIdAndUpdate({_id: req.params.id}, req.body).then(function(){
-        Item.findOne({_id: req.params.id}).then(function(updatedClient){
-            res.status(200).send(updatedClient);
-        });
-    }).catch(next);
+router.put('/:id', (req, res, next) => {
+  Client.findByIdAndUpdate({ _id: req.params.id }, req.body).then(() => {
+    Client.findOne({ _id: req.params.id }).then((updatedClient) => {
+      res.status(200).send(updatedClient);
+    });
+  }).catch(next);
 });
 
 // delete a client from the database
-router.delete('/:id', function(req, res, next) {
-    Client.findByIdAndRemove({_id: req.params.id}).then(function(deletedClient){
-        res.status(200).send(deletedClient);
-    }).catch(next);
+router.delete('/:id', (req, res, next) => {
+  Client.findByIdAndRemove({ _id: req.params.id }).then((deletedClient) => {
+    res.status(200).send(deletedClient);
+  }).catch(next);
 });
-
 
 
 module.exports = router;

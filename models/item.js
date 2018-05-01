@@ -1,16 +1,17 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+
+const { Schema } = mongoose;
 
 // Creating the Schema
 const ItemSchema = new Schema({
-    name:{
-        type: String,
-        required: [true, 'Item Name is Required']
-    },
-    amount:{
-        type: Number,
-        default: 0
-    }
+  name: {
+    type: String,
+    required: [true, 'Item Name is Required'],
+  },
+  amount: {
+    type: Number,
+    default: 0,
+  },
 });
 
 // Creating the Model

@@ -1,0 +1,202 @@
+
+  .quick-info-items {
+  	position: relative;
+	text-align: center;
+	margin: 85px 0;
+ }
+  .quick-info-items h1 {
+    font-weight: bold;
+    margin: 50px 0; }
+
+   .quick-info-items .container> i{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #C38F8F;
+    border-radius: 50%;
+    color: #C38F8F;
+    text-align: center;
+    line-height: 39px;
+    cursor: pointer;
+    position: absolute;
+    top: 9%;
+    left: 16%;
+}
+	.quick-info-items .container>i:hover{
+		color: #703e51;
+		border-color: #703e51;
+	}
+
+    .quick-info-items .content-quick-info-items .thead {
+      background: #703e51;
+      color: #fff;
+      width: 969px;
+      margin: 0 auto -9px; }
+      .quick-info-items .content-quick-info-items .thead ul li {
+        width: 239px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 54px;
+        display: inline-block; }
+      #bills .content-quick-info-items .thead ul li, #items .content-quick-info-items .thead ul li {
+      	width: 190px;
+      }
+
+        .quick-info-items .content-quick-info-items .thead ul li label {
+          font-size: 20px;
+          margin: 0 7px;
+          font-weight: lighter; }
+        .quick-info-items .content-quick-info-items .thead ul li i {
+          color: #ffec17;
+          font-size: 1.5em; }
+    
+    .quick-info-items .content-quick-info-items table {
+      display: block;
+      border: 1px solid #ccc;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+      background: #fff;
+      position: relative;
+      max-height: 363px;
+      overflow-y: scroll; }
+      .quick-info-items .content-quick-info-items table tr {
+        border-bottom: 1px solid #ddd;
+        padding: 5px; }
+        .quick-info-items .content-quick-info-items table tr td {
+          width: 239px;
+          height: 60px;
+          padding: 17px;
+          font-size: 18px; }
+
+          .quick-info-items .content-quick-info-items table tr td i {
+            color: #C38F8F;
+            width: 40px;
+            height: 25px;
+            margin-left: 10px;
+            line-height: 18px;
+            font-size: 1.5em;
+            cursor: pointer;
+            }
+            .quick-info-items .content-quick-info-items table tr td i:hover {
+              color: #703e51; }
+    .quick-info-items .content-quick-info-items .table {
+      width: 85%;
+      margin: 0 auto; }
+
+/* start header */
+/*start navbar link */
+
+
+.form
+{
+    background: #e2b1b1;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px 0 35px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #ccc;
+}
+.form h2 {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: black;
+    margin-left: 10%;
+    box-shadow: -1px 7px 4px 3px #131111;
+    background-color: #a77474;
+    color: #0e0c0c;
+}
+.form div { margin-bottom: 20px }
+.form label { width: 27% }
+input 
+{
+    width: 40%;
+    padding: 8px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.form .btn { width: 30%; margin: 5px 0 0 }
+
+
+
+
+body{
+	background-color:#fde0e0;
+	color:black;
+}
+
+a{
+	color:#e2cbcb;
+  font-size: 26px;
+  padding-top:25px;
+  padding-bottom:25px;
+	line-height:70px;
+}
+.navbar-EBR
+{
+  color:#de91d8;
+  font-size: 26px;
+  padding-top:25px;
+  padding-bottom:25px;
+  line-height:70px;
+}
+
+
+/* our categories */
+.navbar-inverse .navbar-nav > li > a
+{
+	font-size: 20px;
+	color:#f3eaea;
+	background-color:#C38F8F;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+ /* categories menu */
+ 
+ .dropdown-menu
+ {
+	 background-color:#e4c6c6;
+	 min-width: 200px;
+	 padding-left:20px;
+	 padding:0px;
+ }
+ 
+ 
+ .dropdown-menu > li > a
+ {
+	 padding:10px 50px;
+	 border-top:3px solid #272222;
+	 -webkit-transition:padding 0.5s ease;
+	 -moz-transition:padding 0.5s ease;
+	 -o-transition:padding 0.5s ease;
+	 transition:padding 0.5s ease;
+ }
+ .navbar-right .dropdown-menu {
+     left: 0;
+	 right: auto;
+	}
+  
+
+  .dropdown-menu > li > a:hover
+   {
+   		 cursor: pointer;
+	  	 padding-left:25px;
+  }
+
+/* end header */
+
+#suppliers,#expenses,#bills,#items
+,.clients_form,.suppliers_form,.expenses_form,.bills_form,.items_form{
+	display: none;
+}
